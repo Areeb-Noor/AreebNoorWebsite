@@ -1,0 +1,315 @@
+:root {
+  --color-primary: #2584ff;
+  --color-secondary: #00d9ff;
+  --color-accent: #ff3400;
+  --color-headings: #1b0760;
+  --color-body: #918ca4;
+}
+/* Typography*/
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: Inter, Arial, Helvetica, Sans-serif;
+  font-size: 2.4rem;
+  line-height: 1.5;
+  color: var(--color-body);
+  background: #121212;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-headings);
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 7rem;
+  color: white;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+p {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.8rem;
+  }
+
+  h1 {
+    font-size: 8rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+    color: white;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+  }
+}
+/* Link */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.link-arrow {
+  color: var(--color-accent);
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.link-arrow::after {
+  content: "-->";
+  margin-left: 5px;
+  transition: margin 0.15s;
+}
+
+.link-arrow:hover::after {
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .link-arrow {
+    font-size: 1.5rem;
+  }
+}
+
+/* Badges */
+.badge {
+  border-radius: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  white-space: nowrap;
+}
+
+.badge--primary {
+  background: purple;
+  display: block;
+  margin-left: 825px;
+  width: 18rem;
+  text-align: center;
+
+  border-radius: 5rem;
+  margin-top: 1rem;
+}
+
+.badge--secondary {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
+.badge--small {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.5rem;
+  }
+
+  .badge--small {
+    font-size: 1.2rem;
+  }
+}
+/* Lists */
+.list {
+  list-style: none;
+  padding-left: 0;
+  color: rgb(31, 30, 30);
+}
+
+.socials {
+  display: inline-block;
+  font-size: 6rem;
+  color: white;
+}
+
+.socials > li {
+  display: inline-block;
+  font-size: 6rem;
+  margin-left: 4rem;
+  margin-right: 5rem;
+  color: white;
+}
+
+.socials > li a:hover {
+  color: purple;
+  font-size: 7rem;
+  transition: 0.2s;
+}
+
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+/* Cards */
+.card {
+  border-radius: 7px;
+  overflow: hidden;
+  border: 2px solid purple;
+  background: rgb(255, 255, 255);
+}
+
+.card__header,
+.card__body {
+  padding: 2rem 3rem;
+}
+
+.card--BestBuy .card__header {
+  background: rgb(132, 130, 133);
+  color: #fff;
+}
+
+.card--Lowes .card__header {
+  background: rgb(132, 130, 133);
+  color: #fff;
+}
+
+.card--HomeDepot .card__header {
+  background: rgb(132, 130, 133);
+  color: #fff;
+}
+.card--Mucho .card__header {
+  background: rgb(132, 130, 133);
+  color: #fff;
+}
+.card--Manheim .card__header {
+  background: rgb(132, 130, 133);
+  color: #fff;
+}
+.card--Ryerson .card__header {
+  background: rgb(132, 130, 133);
+  color: #fff;
+}
+
+.card--Filler .card__header {
+  background: black;
+  color: black;
+}
+
+.card--secondary .card__header {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
+/* Plans */
+.plan__name {
+  color: #fff;
+  margin: 0;
+  text-align: center;
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+.plan__description {
+  font-size: 1.8rem;
+  font-weight: 300;
+  display: block;
+  text-align: center;
+}
+
+.plan__date {
+  font-size: 1.5rem;
+  font-weight: 300;
+  display: block;
+  text-align: center;
+}
+
+.plan .list__item {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .plan__name {
+    font-size: 3rem;
+  }
+
+  .plan__description {
+    font-size: 1.7rem;
+  }
+
+  .plan__date {
+    font-size: 1.5rem;
+  }
+}
+
+/* Grids */
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.hrid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .hrid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.nav {
+  text-align: center;
+  list-style: none;
+  margin-top: 0px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 4rem;
+  border: 2.5px solid purple;
+  border-radius: 500px;
+}
+
+.nav > li {
+  display: inline-block;
+  padding-right: 6.3rem;
+}
+
+.nav > li a:hover {
+  color: purple;
+  font-size: 4.2rem;
+  transition: 0.2s;
+}
+
+.HomeList {
+  list-style: none;
+  margin-bottom: 5rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  font-size: 3rem;
+  color: #b6b6b6;
+}
+
+.coloredtext {
+  color: purple;
+  font-size: 3.5rem;
+  text-decoration: underline;
+}
+
+.colorcontact {
+  color: purple;
+}
