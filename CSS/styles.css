@@ -237,7 +237,7 @@ a {
 
 .plan .list__item {
   margin-bottom: 2rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -302,13 +302,13 @@ a {
   margin-bottom: 5rem;
   text-align: left;
   margin-right: 4rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #b6b6b6;
 }
 
 .coloredtext {
   color: purple;
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-decoration: underline;
 }
 
