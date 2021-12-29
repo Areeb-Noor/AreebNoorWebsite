@@ -145,7 +145,7 @@ a {
 .socials > li {
   display: inline-block;
   font-size: 6rem;
-  margin-left: 4rem;
+  margin-left: 0.5rem;
   margin-right: 5rem;
   color: white;
 }
@@ -322,5 +322,13 @@ a {
     margin-right: 4rem;
     font-size: 3rem;
     color: #b6b6b6;
+  }
+
+  .socials > li {
+    display: inline-block;
+    font-size: 6rem;
+    margin-left: 4rem;
+    margin-right: 5rem;
+    color: white;
   }
 }
