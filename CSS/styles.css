@@ -298,7 +298,7 @@ a {
 .HomeList {
   list-style: none;
   margin-bottom: 5rem;
-  margin-left: 4rem;
+  text-align: left;
   margin-right: 4rem;
   font-size: 3rem;
   color: #b6b6b6;
@@ -312,4 +312,15 @@ a {
 
 .colorcontact {
   color: purple;
+}
+
+@media screen and (min-width: 768px) {
+  .HomeList {
+    list-style: none;
+    margin-bottom: 5rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    font-size: 3rem;
+    color: #b6b6b6;
+  }
 }
