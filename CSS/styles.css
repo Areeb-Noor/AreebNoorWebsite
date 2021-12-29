@@ -140,11 +140,12 @@ a {
   display: inline-block;
   font-size: 6rem;
   color: white;
+  margin-top: 0.5rem;
 }
 
 .socials > li {
   display: inline-block;
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   margin-left: 0.5rem;
   margin-right: 5rem;
   color: white;
@@ -236,6 +237,7 @@ a {
 
 .plan .list__item {
   margin-bottom: 2rem;
+  font-size: 1.5rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -300,13 +302,13 @@ a {
   margin-bottom: 5rem;
   text-align: left;
   margin-right: 4rem;
-  font-size: 3rem;
+  font-size: 1.5rem;
   color: #b6b6b6;
 }
 
 .coloredtext {
   color: purple;
-  font-size: 3.5rem;
+  font-size: 2rem;
   text-decoration: underline;
 }
 
@@ -330,5 +332,15 @@ a {
     margin-left: 4rem;
     margin-right: 5rem;
     color: white;
+  }
+
+  .coloredtext {
+    color: purple;
+    font-size: 3.5rem;
+    text-decoration: underline;
+  }
+
+  .plan .list__item {
+    margin-bottom: 2rem;
   }
 }
